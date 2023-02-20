@@ -1,0 +1,134 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/extend";
+
+/*ESTILOS DE 2023*/
+
+/*MOBILE*/
+
+/*estilos de header*/
+
+.cabecera-actualidad{
+    @include headerMobile;
+}
+
+.titulo-actualidad{
+    display: none;
+}
+
+.container-navbar{
+    padding-left: $paddingNavHeader;
+}
+
+.navbar-brand{
+    color: $colorNavbar;
+}
+
+/*estilos de main*/
+
+.main-actualidad{
+    @include mainMobile;
+}
+
+.jugadores-actualidad{
+    display: none;
+}
+
+.dt-plantel{
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.plantel-padre{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.plantel-item{
+    text-shadow: 0.5px 0.5px 0.5px $colorListas;
+}
+
+/*estilos de footer*/
+
+.derechos-actualidad{
+    @include footerMobile;
+}
+
+/*TABLET*/
+
+@media screen and (min-width:600px){
+    /*estilos de header*/
+    .cabecera-actualidad {
+        @extend %headerTablet;
+
+
+.titulo-actualidad{
+    @include tituloTablet;
+}
+
+.container-navbar{
+    @include navbar;
+}
+ }
+ }
+/*DESKTOP*/
+
+@media screen and (min-width:1024px){
+/*estilos de header*/
+.cabecera-actualidad{
+@include headerSubpaginas;
+
+
+
+.titulo-actualidad{
+    padding-left: 1rem;
+    margin-right: 22rem;
+}
+
+
+
+.nav-link{
+    @include navLink;
+}
+}
+
+/*estilos de main*/
+
+    .main-actualidad{
+    background-color: $bgMainFooter;
+    display: grid;
+    grid-template-areas: "h2 img"
+                         "div img";
+
+.jugadores-actualidad{
+    display: grid;
+    height: 60%;
+    grid-area: img;
+}
+
+.dt-plantel{
+    grid-area: h2;
+    margin-left: 2.5rem;
+}
+
+.container-plantel{
+    grid-area: div;
+}
+
+
+} 
+}
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+

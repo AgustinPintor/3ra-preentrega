@@ -1,0 +1,212 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS CONTACTOS*/
+
+/*MOBILE*/
+
+/*estilos header*/
+
+.encabezado-contactos{
+    @include headerMobile;
+
+.titulo-contactos{
+    display: none;
+}
+
+.container{
+    padding-left: 2rem;
+}
+
+}
+
+/*estilos main*/
+
+.cuerpo-contactos{
+    @include mainMobile;
+    height: 45rem;
+    
+    
+
+
+.subtitulo-contactos{
+ margin-top: 3rem;
+    text-decoration: underline;
+}    
+
+.p-contactos{
+   margin-top: 2rem;
+}
+
+.contenedor-links{
+height: 10rem;
+}
+
+.img-sitio{
+    margin-right: 1rem;
+  margin-top: 2rem;
+    height: 55%;
+}
+
+.img-ig{
+    margin-left: 1rem;
+margin-top: 2rem;
+   height:55%;
+}
+
+.img-tw{
+    margin-left: 1rem;
+    margin-right: 1rem;
+   margin-top: 2rem;
+    height: 55%;
+}
+
+}
+
+
+/*estilos footer*/
+
+.pie-contactos{
+   @include footerMobile;
+}
+
+
+/*TABLET*/
+
+@media screen and(min-width:600px){
+/*estilos de header*/
+.encabezado-contactos{
+    @include headerSubpaginas;
+
+.titulo-contactos{
+    @include tituloTablet;
+
+}    
+}
+
+
+/*estilos de main*/
+
+.cuerpo-contactos{
+   
+.subtitulo-contactos{
+    display: flex;
+}    
+
+.p-contactos{
+margin-left: 1rem;
+
+}   
+.img-sitio{
+    margin-right: 1rem;
+  margin-top: 2rem;
+    height: 70%;
+}
+
+.img-ig{
+    margin-left: 1rem;
+margin-top: 2rem;
+   height: 70%;
+}
+
+.img-tw{
+    margin-left: 1rem;
+    margin-right: 1rem;
+   margin-top: 2rem;
+    height: 70%;
+}
+}
+}
+
+/*DESKTOP*/
+@media screen and(min-width:1024px){
+/*estilos main*/
+
+.cuerpo-contactos{
+    height: 40rem;
+display: grid;
+grid-template-areas: "h2 h2 h2"
+                     "p p p"
+                     "img-uno   img-dos  img-tres";
+
+
+.subtitulo-contactos{
+    margin-left: 31rem;
+    grid-area: h2;
+}
+
+.p-contactos{
+    grid-area: p;
+    padding-bottom: 0rem;
+   font-weight: bold;
+}
+
+
+
+
+.img-sitio{
+   grid-area: img-uno;
+    height:70%;
+    margin-left: 12rem;
+    padding-right: 10rem;
+}
+
+.img-ig{
+    grid-area: img-tres;
+   height: 70%;
+   padding-left: 15rem ;
+}
+
+.img-tw{
+    grid-area: img-dos;
+    height: 70%;
+    padding-left: 5rem;
+}
+
+}
+
+/*estilos footer*/
+
+.pie-contactos{
+    display: flex;
+   text-align:center;
+   justify-content: baseline;
+  padding-right: 2.9rem;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

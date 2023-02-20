@@ -1,0 +1,169 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/extend";
+
+/*ESTILOS DE HOME*/
+
+/*MOBILE*/
+
+/*estilos de header*/
+
+.encabezado-home{
+@include headerMobile;
+
+.titulo-home{
+    display: none;
+}
+
+.escudo-home{
+    display: none;
+}
+
+.navbar-brand{
+    color: $colorNavbar;
+}
+
+.container-navbar{
+    padding-left: $paddingNavHeader;
+}
+}
+
+/*estilos de main*/
+
+.main-home{
+@include mainMobile;
+
+.subtitulo-home{
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.padre-parrafos-home{
+    margin-top: 1rem;
+}
+
+.ruben-home{
+    width: 70%;
+    margin-top: 3rem;
+}
+
+}
+
+/*estilos de footer*/
+
+.derechos-home{
+    height: 2rem;
+    background-color: $bgMainFooter;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*TABLET*/
+@media screen and (min-width:600px){
+/*estilos de header*/
+.encabezado-home{
+    @extend %headerTablet;
+    justify-content: space-between;
+
+    .navbar-brand{
+        color: $colorNavbar;
+    }
+
+    .container-navbar{
+        @include navbar;
+    }
+
+    .titulo-home{
+@include tituloTablet;
+    }
+}
+}
+
+
+
+/*DESKTOP*/
+@media screen and (min-width:1024px){
+/*estilos de header*/
+
+.encabezado-home{
+height: 10rem;
+align-items: center;
+
+
+.escudo-home{
+display: flex;
+height: 80%;
+margin-right: 18rem;
+padding-left: 0.5rem;
+}
+
+.titulo-home{
+    padding-left: 0.5rem;
+}
+
+.container-navbar{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.navbar-brand{
+    color: $colorNavbar;
+}
+
+.nav-link{
+    color: $colorLinks;
+    text-shadow: 0.5px 0.5px 0.5px $colorNavbar;
+}
+
+}
+
+/*estilos de main*/
+
+.main-home{
+    height: 20rem;
+display: grid;
+grid-template-areas: "h2 img"
+                     "div img";
+
+.subtitulo-home{grid-area: h2;
+margin-left: 2rem;}
+
+.padre-parrafos-home{grid-area: div;
+margin: 0rem 0rem 0rem 2rem;}
+
+.ruben-home{grid-area: img;
+margin-left: 6rem;}
+
+}
+
+/*estilos de footer*/
+
+.derechos-home{
+    height: 11rem;
+    background-color: $bgMainFooter;
+    display: flex;
+    text-align: center;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

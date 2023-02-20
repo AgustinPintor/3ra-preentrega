@@ -1,0 +1,12 @@
+
+//extend para tablet
+@media screen and (min-width:600px){
+
+%headerTablet {
+    background-color:$bgHeader;
+    display: flex;
+    justify-content: start;
+}
+}
+
+

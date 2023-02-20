@@ -1,0 +1,133 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS ESTADIO*/
+
+/*MOBILE*/
+
+/*estilos header*/
+
+.cabecera-estadio{
+    @include headerMobile;
+
+.titulo-estadio{
+    display: none;
+}
+}
+
+/*estilos main*/
+
+.main-estadio{
+@include mainMobile;
+
+.p-uno-estadio{
+    margin-top: 2rem;
+}
+
+.contenedor-gigante{
+    height: 10rem;
+    margin-top: 2rem;
+}
+.gigante{
+    height: 100%;
+}
+}
+
+/*estilos footer*/
+
+.pie-estadio{
+    @include footerMobile;
+}
+
+
+/*TABLET*/
+
+@media screen and (min-width:600px){
+/*estilos header*/
+
+.cabecera-estadio{
+    @include headerSubpaginas;
+
+.titulo-estadio{
+    @include tituloTablet;
+}
+}
+
+/*estilos main*/
+
+.main-estadio{
+
+.contenedor-gigante{
+    height: 15rem ;
+    .gigante{
+        height: 100%;
+    }
+}
+}
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width:1024px){
+/*estilos main*/
+
+.main-estadio{
+display: grid;
+grid-template-areas: "p-uno div"
+                     "p-dos div"
+                     "p-tres div";
+
+.p-uno-estadio{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 5rem;
+    grid-area: p-uno;
+}                     
+
+.p-dos-estadio{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-area: p-dos;
+}
+
+.p-tres-estadio{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-area: p-tres;
+    margin-bottom: 10rem;
+}
+
+.contenedor-gigante{
+    height: 18rem;
+    padding-right: 2rem;
+    margin-bottom: 9rem;
+    grid-area: div;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

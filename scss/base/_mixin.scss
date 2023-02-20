@@ -1,0 +1,53 @@
+@mixin headerMobile{
+    background-color:$bgHeader;
+    display: flex;
+    justify-content: start;
+
+}
+
+@mixin mainMobile{
+    background-color: $bgMainFooter;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+height: 40rem;
+}
+
+@mixin footerMobile{
+    height: 2rem;
+    background-color: $bgMainFooter;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@mixin tituloTablet{
+    display: flex;
+    padding-left: 2rem;
+}
+
+@mixin navbar{
+    display: flex;
+    align-items: center;
+}
+
+@mixin headerSubpaginas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin navLink{
+    color: $colorLinks;
+    text-shadow: 0.5px 0.5px 0.5px $colorNavbar;
+}
+
+@mixin estiloListas{
+    text-shadow: 0.5px 0.5px 0.5px;
+    color: $colorListas;
+}
+
+
+

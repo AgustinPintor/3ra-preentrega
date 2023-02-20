@@ -1,0 +1,188 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*ESTILOS DEPORTES*/
+
+/*MOBILE*/
+
+/*estilos header*/
+
+.cabecera-deportes{
+    @include headerMobile;
+
+.titulo-deportes{
+    display: none;
+}
+
+.container-navbar{
+    padding-left: $paddingNavHeader;
+}
+}
+
+
+/*estilos main*/
+
+.cuerpo-deportes{
+    @include mainMobile;
+    height: 45rem;
+
+
+.lista-deportes-padre{
+    list-style: none;
+}
+
+.lista-deportes-item{
+    @include estiloListas;
+}
+
+.imagen-deporte-dos{
+    display: none;
+}
+}
+
+
+
+/*estilos footer*/
+
+.pie-deportes{
+   @include footerMobile;
+}
+
+
+
+/*TABLET*/
+
+@media screen and (min-width:600px){
+/*estilos de header*/
+
+.cabecera-deportes{
+@include headerSubpaginas;
+
+
+.titulo-deportes{
+    display: flex;
+    padding-left: 2rem;
+}    
+}
+
+
+/*estilos de main*/
+
+.cuerpo-deportes{
+    
+.p-uno-deportes{
+    margin-top: 2rem;
+padding-left: 2rem;
+}
+
+.p-tres-deportes{
+    padding-left: 1.5rem;
+}
+
+}
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width:1024px){
+/*estilos de header*/
+.cabecera-deportes{
+    @include headerSubpaginas;
+}
+
+
+/*estilos de main*/
+
+.cuerpo-deportes{
+    height: 70rem;
+    display: grid;
+    grid-template-areas:"p-uno img-dos"
+                        "p-dos img-dos" 
+                        "p-tres img-dos"
+                        "ul img-dos";
+
+
+
+
+
+.lista-deportes-padre{
+    margin-right: 7rem;
+    grid-area: ul;
+    margin-bottom: 25rem;
+}
+
+.p-uno-deportes{
+    margin-right: 4rem;
+    grid-area: p-uno;
+    margin-top: 5rem;
+}
+
+.p-dos-deportes{
+    margin-right: 3rem;
+    grid-area: p-dos;
+}
+
+.p-tres-deportes{
+    margin-right: 4rem;
+    grid-area: p-tres;
+}
+
+.imagen-deporte-dos{
+    display: grid;
+    margin-right: 1rem;
+    grid-area:img-dos;
+    margin-bottom: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

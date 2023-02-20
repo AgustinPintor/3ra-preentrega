@@ -1,0 +1,488 @@
+@media screen and (min-width: 600px) {
+  .encabezado-home, .cabecera-actualidad {
+    background-color: #9aa1ee;
+    display: flex;
+    justify-content: start; } }
+
+/*ESTILOS DE HOME*/
+/*MOBILE*/
+/*estilos de header*/
+.encabezado-home {
+  background-color: #9aa1ee;
+  display: flex;
+  justify-content: start; }
+  .encabezado-home .titulo-home {
+    display: none; }
+  .encabezado-home .escudo-home {
+    display: none; }
+  .encabezado-home .navbar-brand {
+    color: #2121d7; }
+  .encabezado-home .container-navbar {
+    padding-left: 2rem; }
+
+/*estilos de main*/
+.main-home {
+  background-color: #f3f387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem; }
+  .main-home .subtitulo-home {
+    margin-top: 1rem;
+    text-decoration: underline; }
+  .main-home .padre-parrafos-home {
+    margin-top: 1rem; }
+  .main-home .ruben-home {
+    width: 70%;
+    margin-top: 3rem; }
+
+/*estilos de footer*/
+.derechos-home {
+  height: 2rem;
+  background-color: #f3f387;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+/*TABLET*/
+@media screen and (min-width: 600px) {
+  /*estilos de header*/
+  .encabezado-home {
+    justify-content: space-between; }
+    .encabezado-home .navbar-brand {
+      color: #2121d7; }
+    .encabezado-home .container-navbar {
+      display: flex;
+      align-items: center; }
+    .encabezado-home .titulo-home {
+      display: flex;
+      padding-left: 2rem; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*estilos de header*/
+  .encabezado-home {
+    height: 10rem;
+    align-items: center; }
+    .encabezado-home .escudo-home {
+      display: flex;
+      height: 80%;
+      margin-right: 18rem;
+      padding-left: 0.5rem; }
+    .encabezado-home .titulo-home {
+      padding-left: 0.5rem; }
+    .encabezado-home .container-navbar {
+      display: flex;
+      align-items: center; }
+    .encabezado-home .navbar-brand {
+      color: #2121d7; }
+    .encabezado-home .nav-link {
+      color: #7070e6;
+      text-shadow: 0.5px 0.5px 0.5px #2121d7; }
+  /*estilos de main*/
+  .main-home {
+    height: 20rem;
+    display: grid;
+    grid-template-areas: "h2 img" "div img"; }
+    .main-home .subtitulo-home {
+      grid-area: h2;
+      margin-left: 2rem; }
+    .main-home .padre-parrafos-home {
+      grid-area: div;
+      margin: 0rem 0rem 0rem 2rem; }
+    .main-home .ruben-home {
+      grid-area: img;
+      margin-left: 6rem; }
+  /*estilos de footer*/
+  .derechos-home {
+    height: 11rem;
+    background-color: #f3f387;
+    display: flex;
+    text-align: center;
+    align-items: end; } }
+
+@media screen and (min-width: 600px) {
+  .encabezado-home, .cabecera-actualidad {
+    background-color: #9aa1ee;
+    display: flex;
+    justify-content: start; } }
+
+/*ESTILOS DE 2023*/
+/*MOBILE*/
+/*estilos de header*/
+.cabecera-actualidad {
+  background-color: #9aa1ee;
+  display: flex;
+  justify-content: start; }
+
+.titulo-actualidad {
+  display: none; }
+
+.container-navbar {
+  padding-left: 2rem; }
+
+.navbar-brand {
+  color: #2121d7; }
+
+/*estilos de main*/
+.main-actualidad {
+  background-color: #f3f387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem; }
+
+.jugadores-actualidad {
+  display: none; }
+
+.dt-plantel {
+  text-decoration: underline;
+  margin-top: 1rem; }
+
+.plantel-padre {
+  margin-top: 1rem;
+  list-style: none; }
+
+.plantel-item {
+  text-shadow: 0.5px 0.5px 0.5px #565643; }
+
+/*estilos de footer*/
+.derechos-actualidad {
+  height: 2rem;
+  background-color: #f3f387;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+/*TABLET*/
+@media screen and (min-width: 600px) {
+  /*estilos de header*/
+  .cabecera-actualidad .titulo-actualidad {
+    display: flex;
+    padding-left: 2rem; }
+  .cabecera-actualidad .container-navbar {
+    display: flex;
+    align-items: center; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*estilos de header*/
+  .cabecera-actualidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .cabecera-actualidad .titulo-actualidad {
+      padding-left: 1rem;
+      margin-right: 22rem; }
+    .cabecera-actualidad .nav-link {
+      color: #7070e6;
+      text-shadow: 0.5px 0.5px 0.5px #2121d7; }
+  /*estilos de main*/
+  .main-actualidad {
+    background-color: #f3f387;
+    display: grid;
+    grid-template-areas: "h2 img" "div img"; }
+    .main-actualidad .jugadores-actualidad {
+      display: grid;
+      height: 60%;
+      grid-area: img; }
+    .main-actualidad .dt-plantel {
+      grid-area: h2;
+      margin-left: 2.5rem; }
+    .main-actualidad .container-plantel {
+      grid-area: div; } }
+
+@media screen and (min-width: 600px) {
+  .encabezado-home, .cabecera-actualidad {
+    background-color: #9aa1ee;
+    display: flex;
+    justify-content: start; } }
+
+/*ESTILOS DEPORTES*/
+/*MOBILE*/
+/*estilos header*/
+.cabecera-deportes {
+  background-color: #9aa1ee;
+  display: flex;
+  justify-content: start; }
+  .cabecera-deportes .titulo-deportes {
+    display: none; }
+  .cabecera-deportes .container-navbar {
+    padding-left: 2rem; }
+
+/*estilos main*/
+.cuerpo-deportes {
+  background-color: #f3f387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+  height: 45rem; }
+  .cuerpo-deportes .lista-deportes-padre {
+    list-style: none; }
+  .cuerpo-deportes .lista-deportes-item {
+    text-shadow: 0.5px 0.5px 0.5px;
+    color: #565643; }
+  .cuerpo-deportes .imagen-deporte-dos {
+    display: none; }
+
+/*estilos footer*/
+.pie-deportes {
+  height: 2rem;
+  background-color: #f3f387;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+/*TABLET*/
+@media screen and (min-width: 600px) {
+  /*estilos de header*/
+  .cabecera-deportes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .cabecera-deportes .titulo-deportes {
+      display: flex;
+      padding-left: 2rem; }
+  /*estilos de main*/
+  .cuerpo-deportes .p-uno-deportes {
+    margin-top: 2rem;
+    padding-left: 2rem; }
+  .cuerpo-deportes .p-tres-deportes {
+    padding-left: 1.5rem; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*estilos de header*/
+  .cabecera-deportes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  /*estilos de main*/
+  .cuerpo-deportes {
+    height: 70rem;
+    display: grid;
+    grid-template-areas: "p-uno img-dos" "p-dos img-dos"  "p-tres img-dos" "ul img-dos"; }
+    .cuerpo-deportes .lista-deportes-padre {
+      margin-right: 7rem;
+      grid-area: ul;
+      margin-bottom: 25rem; }
+    .cuerpo-deportes .p-uno-deportes {
+      margin-right: 4rem;
+      grid-area: p-uno;
+      margin-top: 5rem; }
+    .cuerpo-deportes .p-dos-deportes {
+      margin-right: 3rem;
+      grid-area: p-dos; }
+    .cuerpo-deportes .p-tres-deportes {
+      margin-right: 4rem;
+      grid-area: p-tres; }
+    .cuerpo-deportes .imagen-deporte-dos {
+      display: grid;
+      margin-right: 1rem;
+      grid-area: img-dos;
+      margin-bottom: 20rem; } }
+
+@media screen and (min-width: 600px) {
+  .encabezado-home, .cabecera-actualidad {
+    background-color: #9aa1ee;
+    display: flex;
+    justify-content: start; } }
+
+/*ESTILOS CONTACTOS*/
+/*MOBILE*/
+/*estilos header*/
+.encabezado-contactos {
+  background-color: #9aa1ee;
+  display: flex;
+  justify-content: start; }
+  .encabezado-contactos .titulo-contactos {
+    display: none; }
+  .encabezado-contactos .container {
+    padding-left: 2rem; }
+
+/*estilos main*/
+.cuerpo-contactos {
+  background-color: #f3f387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+  height: 45rem; }
+  .cuerpo-contactos .subtitulo-contactos {
+    margin-top: 3rem;
+    text-decoration: underline; }
+  .cuerpo-contactos .p-contactos {
+    margin-top: 2rem; }
+  .cuerpo-contactos .contenedor-links {
+    height: 10rem; }
+  .cuerpo-contactos .img-sitio {
+    margin-right: 1rem;
+    margin-top: 2rem;
+    height: 55%; }
+  .cuerpo-contactos .img-ig {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 55%; }
+  .cuerpo-contactos .img-tw {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    height: 55%; }
+
+/*estilos footer*/
+.pie-contactos {
+  height: 2rem;
+  background-color: #f3f387;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+/*TABLET*/
+@media screen and (min-width: 600px) {
+  /*estilos de header*/
+  .encabezado-contactos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .encabezado-contactos .titulo-contactos {
+      display: flex;
+      padding-left: 2rem; }
+  /*estilos de main*/
+  .cuerpo-contactos .subtitulo-contactos {
+    display: flex; }
+  .cuerpo-contactos .p-contactos {
+    margin-left: 1rem; }
+  .cuerpo-contactos .img-sitio {
+    margin-right: 1rem;
+    margin-top: 2rem;
+    height: 70%; }
+  .cuerpo-contactos .img-ig {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 70%; }
+  .cuerpo-contactos .img-tw {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    height: 70%; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*estilos main*/
+  .cuerpo-contactos {
+    height: 40rem;
+    display: grid;
+    grid-template-areas: "h2 h2 h2" "p p p" "img-uno   img-dos  img-tres"; }
+    .cuerpo-contactos .subtitulo-contactos {
+      margin-left: 31rem;
+      grid-area: h2; }
+    .cuerpo-contactos .p-contactos {
+      grid-area: p;
+      padding-bottom: 0rem;
+      font-weight: bold; }
+    .cuerpo-contactos .img-sitio {
+      grid-area: img-uno;
+      height: 70%;
+      margin-left: 12rem;
+      padding-right: 10rem; }
+    .cuerpo-contactos .img-ig {
+      grid-area: img-tres;
+      height: 70%;
+      padding-left: 15rem; }
+    .cuerpo-contactos .img-tw {
+      grid-area: img-dos;
+      height: 70%;
+      padding-left: 5rem; }
+  /*estilos footer*/
+  .pie-contactos {
+    display: flex;
+    text-align: center;
+    justify-content: baseline;
+    padding-right: 2.9rem; } }
+
+@media screen and (min-width: 600px) {
+  .encabezado-home, .cabecera-actualidad {
+    background-color: #9aa1ee;
+    display: flex;
+    justify-content: start; } }
+
+/*ESTILOS ESTADIO*/
+/*MOBILE*/
+/*estilos header*/
+.cabecera-estadio {
+  background-color: #9aa1ee;
+  display: flex;
+  justify-content: start; }
+  .cabecera-estadio .titulo-estadio {
+    display: none; }
+
+/*estilos main*/
+.main-estadio {
+  background-color: #f3f387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 40rem; }
+  .main-estadio .p-uno-estadio {
+    margin-top: 2rem; }
+  .main-estadio .contenedor-gigante {
+    height: 10rem;
+    margin-top: 2rem; }
+  .main-estadio .gigante {
+    height: 100%; }
+
+/*estilos footer*/
+.pie-estadio {
+  height: 2rem;
+  background-color: #f3f387;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+/*TABLET*/
+@media screen and (min-width: 600px) {
+  /*estilos header*/
+  .cabecera-estadio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .cabecera-estadio .titulo-estadio {
+      display: flex;
+      padding-left: 2rem; }
+  /*estilos main*/
+  .main-estadio .contenedor-gigante {
+    height: 15rem; }
+    .main-estadio .contenedor-gigante .gigante {
+      height: 100%; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /*estilos main*/
+  .main-estadio {
+    display: grid;
+    grid-template-areas: "p-uno div" "p-dos div" "p-tres div"; }
+    .main-estadio .p-uno-estadio {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 5rem;
+      grid-area: p-uno; }
+    .main-estadio .p-dos-estadio {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      grid-area: p-dos; }
+    .main-estadio .p-tres-estadio {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      grid-area: p-tres;
+      margin-bottom: 10rem; }
+    .main-estadio .contenedor-gigante {
+      height: 18rem;
+      padding-right: 2rem;
+      margin-bottom: 9rem;
+      grid-area: div; } }
